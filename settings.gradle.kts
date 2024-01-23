@@ -17,16 +17,17 @@ dependencyResolutionManagement {
     repositories {
         maven("https://papermc.io/repo/repository/maven-public/")
         maven("https://repo.codemc.io/repository/maven-releases/")
+        maven("https://repo.william278.net/velocity/")
+        maven("https://s01.oss.sonatype.org/content/repositories/snapshots/")
         maven("https://maven.fabricmc.net/")
-        maven("https://maven.elytrium.net/repo/")
         maven("https://jitpack.io")
     }
 }
 
 plugins {
-    id("org.gradle.toolchains.foojay-resolver-convention") version "0.7.0"
+    id("org.gradle.toolchains.foojay-resolver-convention") version "0.8.0"
     id("org.spongepowered.gradle.plugin") version "2.2.0"
-    id("fabric-loom") version "1.4.4"
+    id("fabric-loom") version "1.5.6"
 }
 
 include("signedvelocity-backend-common")
